@@ -285,7 +285,6 @@ export interface LogsFilesDefinition {
       file_path: string;
       log_group_name?: string;
       log_stream_name?: string;
-      log_group_class?: string;
       multi_line_start_pattern?: string;
       timestamp_format?: string;
       timezone?: 'Local' | 'LOCAL' | 'UTC';
@@ -323,7 +322,6 @@ export interface LogsFilesDefinition {
       file_path: string;
       log_group_name?: string;
       log_stream_name?: string;
-      log_group_class?: string;
       multi_line_start_pattern?: string;
       timestamp_format?: string;
       timezone?: 'Local' | 'LOCAL' | 'UTC';
@@ -380,7 +378,6 @@ export interface LogsWindowsEventsDefinition {
       event_levels: ('CRITICAL' | 'ERROR' | 'WARNING' | 'INFORMATION' | 'VERBOSE')[];
       log_stream_name?: string;
       log_group_name?: string;
-      log_group_class?: string;
       retention_in_days?:
         | -1
         | 1
@@ -412,7 +409,6 @@ export interface LogsWindowsEventsDefinition {
       event_levels: ('CRITICAL' | 'ERROR' | 'WARNING' | 'INFORMATION' | 'VERBOSE')[];
       log_stream_name?: string;
       log_group_name?: string;
-      log_group_class?: string;
       retention_in_days?:
         | -1
         | 1
@@ -558,9 +554,6 @@ export interface CredentialsDefinition2 {
 }
 export interface TracesDefinition {
   traces_collected: {
-    app_signals?: {
-      [k: string]: unknown;
-    };
     xray?: XrayDefinition;
     otlp?: OtlpDefinition;
   };
