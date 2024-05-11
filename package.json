@@ -1,0 +1,20 @@
+{
+  "name": "cloudwatch-agent-config-converter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/wwalpha/cloudwatch-agent-config-converter.git",
+  "author": "wwalpha <wwalpha@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.137",
+    "@types/lodash": "^4.17.1",
+    "@types/node": "^20.12.11",
+    "prettier": "^3.2.5",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.574.0",
+    "@aws-sdk/client-sso-oidc": "3.572.0",
+    "@aws-sdk/client-sts": "3.572.0"
+  }
+}
